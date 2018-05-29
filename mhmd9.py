@@ -1,4 +1,4 @@
 import platform
 def pythonversion():
-	print (platform.python_version())
-pythonversion()
+	return platform.python_version()
+print(pythonversion())

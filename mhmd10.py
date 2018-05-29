@@ -1,17 +1,21 @@
 def mouse_party(cigars,is_weekend):
 	if cigars<40 :
-		print ('false')
+		return False
 		
-	elif cigars>= 40 & cigars <= 60:
-		print ('true')
+	elif cigars>= 40 and cigars <= 60:
+		print ('123')
+		return True
 		
 	else:
-		if is_weekend == false:
-			print (false)
-			
-		else:
-			print (true)
-			
+		
+		return is_weekend
+def str2bool(v):
+  return v.lower() in ("yes", "true", "t")
+
+
 cigars=int(input('tedad cigar :'))
-is_weekend=input('is weekend? type true or false :')
-mouse_party(cigars,is_weekend)
+get=input('is weekend? type true or false :')
+is_weekend = str2bool(get)
+
+
+print(mouse_party(cigars,is_weekend))
